@@ -28,3 +28,7 @@ nav div div {
 nav i {
   color: red;
 }
+
+header {
+  height: 400px;
+}

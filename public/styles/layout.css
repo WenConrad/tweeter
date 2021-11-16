@@ -29,4 +29,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: burlywood;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+main {
+  width: 90%;
+  background-color:burlywood;
+  margin-inline: auto;
 }
