@@ -37,5 +37,5 @@ app.listen(PORT, () => {
 });
 
 app.post("/tweets", (req, res) => {
-  //do something
-}
+  console.log(req.body);
+});
