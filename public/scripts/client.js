@@ -5,6 +5,7 @@
  */
 
 // Fake data taken from initial-tweets.json
+
 const data = [
   {
     "user": {
@@ -31,9 +32,8 @@ const data = [
 ]
 
 const renderTweets = function(tweets) {
-  const tweetsContainer = "";
   for (let tweet of tweets) {
-    tweetsContainer += createTweetElement(tweet);
+    $('#tweets-container').append(createTweetElement(tweet));
   }
 // loops through tweets
 // calls createTweetElement for each tweet
@@ -52,7 +52,7 @@ const createTweetElement = function(tweet) {
       </header>
       <div class="tweet-text">${tweet.content.text}</div>
       <footer>
-        <div>${tweet.created_at}</div>
+        <div>${timeago.format(tweet.created_at)}</div>
         <div class="interact">
           <div>flag</div>
           <div>retwit</div>
