@@ -31,15 +31,38 @@ const data = [
 ]
 
 const renderTweets = function(tweets) {
+  const tweetsContainer = "";
+  for (let tweet of tweets) {
+    tweetsContainer += createTweetElement(tweet);
+  }
 // loops through tweets
 // calls createTweetElement for each tweet
 // takes return value and appends it to the tweets container
 }
 
 const createTweetElement = function(tweet) {
-let $tweet = /* Your code for creating the tweet element */
-// ...
-return $tweet;
+  let $tweet = `
+    <article class="tweet">
+      <header>
+        <div>
+          <img src=${tweet.user.avatars}>
+          <div>${tweet.user.name}</div>
+        </div>
+        <div>${tweet.user.handle}</div>
+      </header>
+      <div class="tweet-text">${tweet.content.text}</div>
+      <footer>
+        <div>${tweet.created_at}</div>
+        <div class="interact">
+          <div>flag</div>
+          <div>retwit</div>
+          <div>heart</div>
+        </div>
+      </footer>
+    </article>
+  `
+  return $tweet;
 }
+console.log(createTweetElement(data[0]), createTweetElement(data[1]));
 
-renderTweets(data);
+// renderTweets(data);
