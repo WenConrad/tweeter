@@ -32,12 +32,16 @@ const data = [
 ]
 
 const renderTweets = function(tweets) {
-  for (let tweet of tweets) {
-    $('#tweets-container').append(createTweetElement(tweet));
-  }
-// loops through tweets
-// calls createTweetElement for each tweet
-// takes return value and appends it to the tweets container
+  $(document).ready(function() {
+    for (let tweet of tweets) {
+      console.log(createTweetElement(tweet))
+      $(".container").append(createTweetElement(tweet));
+      console.log($(".container"));
+    }
+  // loops through tweets
+  // calls createTweetElement for each tweet
+  // takes return value and appends it to the tweets container
+  });
 }
 
 const createTweetElement = function(tweet) {
@@ -63,6 +67,5 @@ const createTweetElement = function(tweet) {
   `
   return $tweet;
 }
-console.log(createTweetElement(data[0]), createTweetElement(data[1]));
 
-// renderTweets(data);
+renderTweets(data);
