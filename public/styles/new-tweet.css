@@ -6,7 +6,6 @@
 .new-tweet form div {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
   font-family: "Bungee", sans-serif;
 }
 
@@ -17,7 +16,8 @@
 
 .new-tweet textarea {
   background-color: burlywood;
-  margin: 1em;
+  padding: 0.5em;
+  margin-bottom: 0.25em;
   border-style: none;
   border-bottom-style: solid;
   border-width: 0.25em;

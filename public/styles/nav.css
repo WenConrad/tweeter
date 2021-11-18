@@ -6,6 +6,9 @@ nav {
   padding-block: 1em;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 nav span {
