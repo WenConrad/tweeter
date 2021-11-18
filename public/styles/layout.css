@@ -39,3 +39,9 @@ main {
   background-color:burlywood;
   margin-inline: auto;
 }
+
+main > * {
+  margin: 0.5em;
+  padding: 0.25em;
+  border-style: solid;
+}

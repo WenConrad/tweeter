@@ -1,0 +1,23 @@
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article.tweet .twooter {
+  margin: 1em;
+  border-bottom-width: 0.25em;
+  border-bottom-style: solid;
+}
+
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article.tweet .interact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

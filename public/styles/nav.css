@@ -29,6 +29,6 @@ nav i {
   color: red;
 }
 
-header {
+header.account {
   height: 400px;
 }
