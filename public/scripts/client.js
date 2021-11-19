@@ -34,9 +34,7 @@ const data = [
 const renderTweets = function(tweets) {
   $(document).ready(function() {
     for (let tweet of tweets) {
-      console.log(createTweetElement(tweet))
       $(".container").append(createTweetElement(tweet));
-      console.log($(".container"));
     }
   // loops through tweets
   // calls createTweetElement for each tweet
@@ -69,3 +67,7 @@ const createTweetElement = function(tweet) {
 }
 
 renderTweets(data);
+
+$("$new-tweet-submit").submit(function(event) {
+  event.preventDefault();
+})

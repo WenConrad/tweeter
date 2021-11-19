@@ -4,6 +4,16 @@ article.tweet header {
   justify-content: space-between;
 }
 
+article.tweet header > * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+article.tweet header img {
+  margin-right: 0.5em;
+}
+
 article.tweet .tweet-text {
   margin-block: 0.25em;
   padding: 0.5em;
