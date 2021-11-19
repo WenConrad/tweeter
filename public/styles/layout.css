@@ -37,7 +37,7 @@ header.account {
 
 main {
   width: 90%;
-  background-color:burlywood;
+  background-color: #f4f1ec;
   margin-inline: auto;
 }
 
@@ -45,4 +45,8 @@ main > * {
   margin: 0.5em;
   padding: 0.5em;
   border-style: solid;
+}
+
+main * {
+  border-color: #545149;
 }

@@ -67,7 +67,13 @@ const createTweetElement = function(tweet) {
 }
 
 renderTweets(data);
-
-$("$new-tweet-submit").submit(function(event) {
-  event.preventDefault();
-})
+$(document).ready(function() {
+  $("form#new-tweet-submit").submit(function(event) {
+    event.preventDefault();
+    let newTweet = $(this).serialize();
+    $.post("/tweets", $(this).serialize(), function(data, status) {
+      console.log(data);
+      console.log("hello");
+    });
+  });
+});
