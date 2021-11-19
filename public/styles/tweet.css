@@ -33,3 +33,7 @@ article.tweet .interact {
   flex-direction: row;
   justify-content: flex-end;
 }
+
+article.tweet .interact *:hover {
+  color: red;
+}
