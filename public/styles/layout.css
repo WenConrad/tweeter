@@ -36,6 +36,8 @@ header.account {
 }
 
 main {
+  display: flex;
+  flex-direction: column-reverse;
   width: 90%;
   background-color: #f4f1ec;
   margin-inline: auto;

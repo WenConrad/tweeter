@@ -67,13 +67,25 @@ const createTweetElement = function(tweet) {
 }
 
 renderTweets(data);
+
+const loadTweets = function() {
+  $.ajax("tweets", {method: "GET" })
+  .then((tweet) => {
+    renderTweets(tweet);
+  });
+};
+
 $(document).ready(function() {
   $("form#new-tweet-submit").submit(function(event) {
     event.preventDefault();
-    let newTweet = $(this).serialize();
+    let input = this.childNodes[3];
+    if (input.value.length > 140) {
+      return alert("too many characters");
+    } else if (input.value === "") {
+      return alert("cannot submit empty tweet");
+    }
     $.post("/tweets", $(this).serialize(), function(data, status) {
-      console.log(data);
-      console.log("hello");
+      console.log("submitted");
     });
   });
 });
