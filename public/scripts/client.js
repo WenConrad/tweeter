@@ -85,7 +85,7 @@ $(document).ready(function() {
       return alert("cannot submit empty tweet");
     }
     $.post("/tweets", $(this).serialize(), function(data, status) {
-      console.log("submitted");
+      loadTweets();
     });
   });
 });
