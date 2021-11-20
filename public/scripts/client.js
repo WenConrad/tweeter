@@ -31,6 +31,12 @@ const data = [
   }
 ]
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const renderTweets = function(tweets) {
   $(document).ready(function() {
     for (let tweet of tweets) {
@@ -52,7 +58,7 @@ const createTweetElement = function(tweet) {
         </div>
         <div>${tweet.user.handle}</div>
       </header>
-      <div class="tweet-text">${tweet.content.text}</div>
+      <div class="tweet-text">${escape(tweet.content.text)}</div>
       <footer>
         <div>${timeago.format(tweet.created_at)}</div>
         <div class="interact">
@@ -74,6 +80,10 @@ const loadTweets = function() {
     renderTweets(tweet);
   });
 };
+
+const invalidTweet = function() {
+  $("#tweet-text").addClass("error");
+}
 
 $(document).ready(function() {
   $("form#new-tweet-submit").submit(function(event) {
