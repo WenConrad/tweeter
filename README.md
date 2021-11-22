@@ -1,16 +1,11 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+This is my Twitter clone project built as a student at Lighthouse Labs during week 4 of a 13-week-bootcamp, for the purpose of learning and practicing web development skills.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Screenshots
 
-## Getting Started
-
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+!["Screenshot of Tweeter with alert for overlength tweet"](https://github.com/WenConrad/tweeter/blob/master/docs/desktopOverlengthTweet.png?raw=true)
+!["Screenshot of mobile view of Tweeter"](https://github.com/WenConrad/tweeter/blob/master/docs/mobileTweet.png?raw=true)
 
 ## Dependencies
 
