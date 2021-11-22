@@ -1,6 +1,8 @@
 # Tweeter Project
 
-This is my Twitter clone project built as a student at Lighthouse Labs during week 4 of a 13-week-bootcamp, for the purpose of learning and practicing web development skills.
+This is my Twitter clone project built as a student at Lighthouse Labs during week 4 of a 13-week bootcamp, for the purpose of learning and practicing web development skills.
+
+Starter code was forked and cloned from https://github.com/lighthouse-labs/tweeter.
 
 ## Screenshots
 
