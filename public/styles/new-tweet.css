@@ -42,6 +42,7 @@
   display: flex;
   color: transparent;  
   text-shadow: 0 0 0 red;
+  margin-inline: 0.25em;
 }
 
 .alert-overlay .close {

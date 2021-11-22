@@ -37,3 +37,9 @@ article.tweet .interact {
 article.tweet .interact *:hover {
   color: red;
 }
+
+@media (max-width: 767px) {
+  article.tweet header img {
+    width: 8vw;
+  }
+}

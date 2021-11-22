@@ -32,6 +32,8 @@ nav i {
   color: red;
 }
 
-header.account {
-  height: 400px;
+@media (max-width: 767px) {
+  nav {
+    height: 15.5vw;
+  }
 }

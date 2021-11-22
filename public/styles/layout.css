@@ -18,7 +18,8 @@ body {
   padding-top: 120px;
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 3vw;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -33,6 +34,7 @@ header.account {
   justify-content: center;
   background-color: burlywood;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  height: 50vw;
 }
 
 main {
@@ -57,14 +59,29 @@ main * {
   border-color: #545149;
 }
 
+@media (max-width: 767px) {
+  body {
+    padding-top: 15.5vw;
+  }
+  header.account img {
+    width: 30vw;
+  }
+}
+
 @media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
   header.account {
     width: 30%;
-    margin: 2%;
+    height: 384px;
+    margin: 1%;
     float: left;
+    position: fixed;
   }
   main {
     width: 66%;
+    margin: 1%;
     float: right;
   }
 }
