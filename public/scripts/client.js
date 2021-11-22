@@ -85,14 +85,28 @@ const invalidTweet = function() {
   $("#tweet-text").addClass("error");
 }
 
+const displayAlert = function(errorMessage) {
+  if ($("#error-code").length) {
+    return;
+  }
+  $(`<div id="error-code">${errorMessage}</div>`).appendTo(".error-message");
+  $(".alert-overlay").slideDown("slow");
+  $("#tweet-text").css("border-bottom-color", "red");
+  setTimeout(function() {
+    $(".alert-overlay").hide();
+    $("#tweet-text").css("border-bottom-color", "");
+    $("#error-code").remove();
+  }, 5000);
+}
+
 $(document).ready(function() {
   $("form#new-tweet-submit").submit(function(event) {
     event.preventDefault();
     let input = this.childNodes[3];
     if (input.value.length > 140) {
-      return alert("too many characters");
+      return displayAlert("Too Many Characters");
     } else if (input.value === "") {
-      return alert("cannot submit empty tweet");
+      return displayAlert("Tweet Contents Empty");
     }
     $.post("/tweets", $(this).serialize(), function(data, status) {
       $(".container article").remove();

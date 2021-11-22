@@ -37,3 +37,13 @@
 .overLength {
   color: red;
 }
+
+.alert-overlay {
+  display: flex;
+  color: transparent;  
+  text-shadow: 0 0 0 red;
+}
+
+.alert-overlay .close {
+  margin-inline: 1em;
+}
