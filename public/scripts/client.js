@@ -117,6 +117,8 @@ $(document).ready(function() {
       return displayAlert("Tweet Contents Empty");
     }
     $.post("/tweets", $(this).serialize(), function(data, status) {
+      $("#tweet-text").val("");
+      $(".counter").val(140);
       $(".container article").remove();
       loadTweets();
     });
