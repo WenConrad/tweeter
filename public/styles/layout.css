@@ -56,3 +56,19 @@ main > *:hover {
 main * {
   border-color: #545149;
 }
+
+@media (min-width: 768px) {
+  header.account {
+    width: 30%;
+    margin: 2%;
+    float: left;
+  }
+  main {
+    width: 66%;
+    float: right;
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
