@@ -100,6 +100,14 @@ const displayAlert = function(errorMessage) {
 }
 
 $(document).ready(function() {
+  $("div.close").click(function() {
+    $(".alert-overlay").hide();
+    $("#tweet-text").css("border-bottom-color", "");
+    $("#error-code").remove();
+  });
+});
+
+$(document).ready(function() {
   $("form#new-tweet-submit").submit(function(event) {
     event.preventDefault();
     let input = this.childNodes[3];
