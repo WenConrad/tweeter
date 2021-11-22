@@ -62,9 +62,9 @@ const createTweetElement = function(tweet) {
       <footer>
         <div>${timeago.format(tweet.created_at)}</div>
         <div class="interact">
-          <div>flag</div>
-          <div>retwit</div>
-          <div>heart</div>
+          <div>🏁</div>
+          <div><i class="fas fa-retweet"></i></div>
+          <div>❤️</div>
         </div>
       </footer>
     </article>

@@ -34,8 +34,13 @@ article.tweet .interact {
   justify-content: flex-end;
 }
 
+article.tweet .interact div {
+  color: transparent;  
+  text-shadow: 0 0 0 #545149;
+}
+
 article.tweet .interact *:hover {
-  color: red;
+  text-shadow: 0 0 0 red;
 }
 
 @media (max-width: 767px) {
